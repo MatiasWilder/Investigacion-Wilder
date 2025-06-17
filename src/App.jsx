@@ -12,13 +12,15 @@ function App() {
       console.log(response);
     })
       .catch(function (error) {
-      console.log(error);
+      console.log(error.message);
     })
   }
+
   return (
     <div>
       <h1>Fotos de gatos</h1>
       <button onClick={ObtenerFoto}>Nueva foto</button>
+      {}
       <img src={img}></img>
     </div>
   )
